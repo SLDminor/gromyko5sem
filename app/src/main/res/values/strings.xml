@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ejednevnik</string>
+    <string name="title">DIARY</string>
+    <string name="calendar_btn">Календарь</string>
+    <string name="spisokvt_btn">Список неосновных дел</string>
+    <string name="add_btn">Добавление</string>
+    <string name="calendar_back_btn">Календарь возврат</string>
+    <string name="spisokvt_back_btn">Список возврат</string>
+    <string name="delete_btn">Удаление</string>
 </resources>
