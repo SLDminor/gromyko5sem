@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/delo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anton"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Название"
+        />
+
+    <TextView
+        android:id="@+id/delo_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/delo_name"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/anton"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Дата"
+        />
+
+    <TextView
+        android:id="@+id/delo_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90sp"
+        android:fontFamily="@font/anton"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Время начала"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:backgroundTint="@color/delete_btn"
+        android:text="Удалить"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="back_ground">#EBD0B3</color>
     <color name="buttons">#DCB385</color>
+    <color name="delete_btn">#B01030</color>
 </resources>

@@ -18,4 +18,9 @@ public class Calendar_Activity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void goSpisokVtActivity(View v){
+        Intent intent = new Intent(this, Spisok_Activity.class);
+        startActivity(intent);
+    }
 }

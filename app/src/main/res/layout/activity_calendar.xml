@@ -9,10 +9,10 @@
 
     <ImageButton
         android:id="@+id/Calendar_Back_Button"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/purple_700"
         android:contentDescription="@string/calendar_back_btn"
         android:onClick="goBack"
@@ -32,5 +32,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Calendar_Spisokvt_Button"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/buttons"
+        android:contentDescription="@string/spisokvt_btn"
+        android:onClick="goSpisokVtActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

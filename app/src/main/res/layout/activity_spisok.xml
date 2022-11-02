@@ -8,22 +8,11 @@
     tools:context=".Spisok_Activity">
 
     <ImageButton
-        android:id="@+id/Spisok_Delete_Button"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="22dp"
-        android:contentDescription="@string/delete_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
-
-    <ImageButton
         android:id="@+id/SpisokVt_Back_Button"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/purple_700"
         android:contentDescription="@string/spisokvt_back_btn"
         android:onClick="goBack"
@@ -32,27 +21,16 @@
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageButton
-        android:id="@+id/SpisokVt_Add_Button"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
+        android:id="@+id/SpisokVt_Calendar_Button"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/buttons"
-        android:contentDescription="@string/add_btn"
+        android:contentDescription="@string/spisokvt_btn"
+        android:onClick="goCalendarActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_add" />
+        app:srcCompat="@android:drawable/ic_menu_today" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Spisok_VT_del"
-        android:layout_width="380dp"
-        android:layout_height="400dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/SpisokVt_Add_Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Spisok_Delete_Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
