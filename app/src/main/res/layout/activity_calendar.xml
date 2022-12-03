@@ -9,11 +9,11 @@
 
     <ImageButton
         android:id="@+id/Calendar_Back_Button"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
+        android:layout_width="100sp"
+        android:layout_height="70sp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="30dp"
-        android:background="@color/purple_700"
+        android:layout_marginBottom="35dp"
+        android:background="@color/buttons"
         android:contentDescription="@string/calendar_back_btn"
         android:onClick="goBack"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +28,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="30dp"
+        android:longClickable="false"
         app:layout_constraintBottom_toTopOf="@+id/Calendar_Back_Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,10 +36,10 @@
 
     <ImageButton
         android:id="@+id/Calendar_Spisokvt_Button"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
+        android:layout_width="100sp"
+        android:layout_height="70sp"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="35dp"
         android:background="@color/buttons"
         android:contentDescription="@string/spisokvt_btn"
         android:onClick="goSpisokVtActivity"

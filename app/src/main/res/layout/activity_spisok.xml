@@ -7,13 +7,29 @@
     android:background="@color/back_ground"
     tools:context=".Spisok_Activity">
 
+    <Button
+        android:id="@+id/otl_btn"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="20dp"
+        android:text="@string/otl_btn"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:backgroundTint="@color/buttons2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/SpisokVt_Calendar_Button"
+        app:layout_constraintStart_toEndOf="@+id/SpisokVt_Back_Button" />
+
     <ImageButton
         android:id="@+id/SpisokVt_Back_Button"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="30dp"
-        android:background="@color/purple_700"
+        android:layout_width="100sp"
+        android:layout_height="70sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="35dp"
+        android:background="@color/buttons"
         android:contentDescription="@string/spisokvt_back_btn"
         android:onClick="goBack"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,10 +38,10 @@
 
     <ImageButton
         android:id="@+id/SpisokVt_Calendar_Button"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="100sp"
+        android:layout_height="70sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="35dp"
         android:background="@color/buttons"
         android:contentDescription="@string/spisokvt_btn"
         android:onClick="goCalendarActivity"

@@ -7,4 +7,11 @@
     <string name="calendar_back_btn">Календарь возврат</string>
     <string name="spisokvt_back_btn">Список возврат</string>
     <string name="delete_btn">Удаление</string>
+    <string name="cr_delo_name">Название</string>
+    <string name="cr_delo_date">Дата</string>
+    <string name="cr_delo_b_time">Время начала</string>
+    <string name="cr_delo_e_time">Время конца</string>
+    <string name="cr_title">Добавление</string>
+    <string name="cr_btn">НОВОЕ</string>
+    <string name="otl_btn">ОТЛОЖИТЬ</string>
 </resources>

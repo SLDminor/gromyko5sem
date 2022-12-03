@@ -8,11 +8,11 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/Home_Spisokvt_Button"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:id="@+id/home_spisokvt_btn"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="35dp"
         android:background="@color/buttons"
         android:contentDescription="@string/spisokvt_btn"
         android:onClick="goSpisokVtActivity"
@@ -21,11 +21,11 @@
         app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     <ImageButton
-        android:id="@+id/Home_Calendar_Button"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:id="@+id/home_calendar_btn"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="35dp"
         android:background="@color/buttons"
         android:contentDescription="@string/calendar_btn"
         android:onClick="goCalendarActivity"
@@ -41,7 +41,7 @@
         android:fontFamily="@font/abril_fatface"
         android:text="@string/title"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#751F1F"
+        android:textColor="@color/title"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,10 +55,27 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/Home_Spisokvt_Button"
+        app:layout_constraintBottom_toTopOf="@+id/home_spisokvt_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/home_cr_btn"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="20dp"
+        android:text="@string/cr_btn"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:onClick="goDeloCreation"
+        app:backgroundTint="@color/buttons2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home_calendar_btn"
+        app:layout_constraintStart_toEndOf="@+id/home_spisokvt_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
