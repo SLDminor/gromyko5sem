@@ -38,10 +38,10 @@ public class Calendar_Activity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_delo_creation);
-            ed1 = findViewById(R.id.editDeloName);
-            ed2 = findViewById(R.id.editDeloDate);
+            ed1 = findViewById(R.id.editPenDeloName);
+            ed2 = findViewById(R.id.editPenDeloType);
             ed3 = findViewById(R.id.editDeloBTime);
-            ed4 = findViewById(R.id.editDeloETime);
+            ed4 = findViewById(R.id.editPenDeloTime);
             btn = findViewById(R.id.delo_create_button);
             String name = ed1.getText().toString();
             String date = ed2.getText().toString();

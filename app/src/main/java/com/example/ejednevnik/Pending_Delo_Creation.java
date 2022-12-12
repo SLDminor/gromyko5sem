@@ -14,34 +14,32 @@ import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ejednevnik.room.ActiveDatabase;
 import com.example.ejednevnik.room.DBClient;
+import com.example.ejednevnik.room.PendingDatabase;
 
-public class Delo_Creation extends AppCompatActivity {
+public class Pending_Delo_Creation extends AppCompatActivity {
     EditText ed1;
     EditText ed2;
     EditText ed3;
-    EditText ed4;
     Button btn;
 
-    public Delo_Creation() {
+    public Pending_Delo_Creation() {
     }
 
     @SuppressLint("ResourceType")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_delo_creation);
-        this.ed1 = (EditText)this.findViewById(R.id.editDeloName);
-        this.ed2 = (EditText)this.findViewById(R.id.editDeloDate);
-        this.ed3 = (EditText)this.findViewById(R.id.editDeloBTime);
-        this.ed4 = (EditText)this.findViewById(R.id.editPenDeloTime);
+        this.ed1 = (EditText)this.findViewById(R.id.editPenDeloName);
+        this.ed2 = (EditText)this.findViewById(R.id.editPenDeloType);
+        this.ed3 = (EditText)this.findViewById(R.id.editPenDeloTime);
         this.btn = (Button)this.findViewById(R.id.delo_create_button);
         this.btn.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 (new Thread(new Runnable() {
                     public void run() {
-                        final ActiveDatabase activeDatabase = new ActiveDatabase(ed1.getText().toString(), ed2.getText().toString(), ed3.getText().toString(), ed4.getText().toString());
-                        DBClient.getInstance(Delo_Creation.this.getApplicationContext()).getAppDatabase().activeDatabaseDAO().insert(activeDatabase);
+                        final PendingDatabase pendingDatabase = new PendingDatabase(ed1.getText().toString(), ed2.getText().toString(), ed3.getText().toString());
+                        DBClient.getInstance(Pending_Delo_Creation.this.getApplicationContext()).getAppDatabase().pendingDatabaseDAO().insert(pendingDatabase);
                         CreateDeloBack();
                     }
                 })).start();
@@ -50,7 +48,7 @@ public class Delo_Creation extends AppCompatActivity {
     }
 
     public void CreateDeloBack(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Spisok_Activity.class);
         startActivity(intent);
     }
 }

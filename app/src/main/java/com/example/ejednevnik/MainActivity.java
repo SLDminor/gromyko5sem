@@ -9,11 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.ejednevnik.room.ActiveDatabase;
 import com.example.ejednevnik.room.DBClient;
 
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     List<ActiveDatabase> list;
     Button btn2;
     ImageButton btn1, btn3;
-
+    Timer timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +45,20 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView.setAdapter(myAdapter);
             });
         }).start();
-    }
 
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(MainActivity.this, "У вас есть отложенное дело!", Toast.LENGTH_LONG);
+                    }
+                });
+                }
+        }, 5000, 50000);
+    }
 
     public void goSpisokVtActivity(View v){
         Intent intent = new Intent(this, Spisok_Activity.class);

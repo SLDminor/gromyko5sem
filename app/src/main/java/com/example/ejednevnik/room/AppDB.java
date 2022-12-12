@@ -6,8 +6,8 @@ import androidx.room.RoomDatabase;
 import com.example.ejednevnik.room.ActiveDatabase;
 import com.example.ejednevnik.room.ActiveDatabaseDAO;
 
-@Database(entities = {ActiveDatabase.class}, version = 1)
+@Database(entities = {ActiveDatabase.class, PendingDatabase.class}, version = 1)
 public abstract class AppDB extends RoomDatabase {
     public abstract ActiveDatabaseDAO activeDatabaseDAO();
-
+    public abstract PendingDatabaseDAO pendingDatabaseDAO();
 }

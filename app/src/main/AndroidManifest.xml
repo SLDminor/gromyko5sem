@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Ejednevnik"
         tools:targetApi="31">
         <activity
+            android:name=".Pending_Delo_Creation"
+            android:exported="false" />
+        <activity
+            android:name=".Delo_Update"
+            android:exported="false" />
+        <activity
             android:name=".Delo_Creation"
             android:exported="false" />
         <activity

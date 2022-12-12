@@ -12,6 +12,12 @@
     <string name="cr_delo_b_time">Время начала</string>
     <string name="cr_delo_e_time">Время конца</string>
     <string name="cr_title">Добавление</string>
+    <string name="up_title">Редактирование</string>
     <string name="cr_btn">НОВОЕ</string>
     <string name="otl_btn">ОТЛОЖИТЬ</string>
+    <string name="pen_title">СОЗДАТЬ ОТЛОЖЕННОЕ ДЕЛО</string>
+    <string name="promej">Временной промежуток</string>
+    <string name="pen_delo_name">Название</string>
+    <string name="pen_delo_type">Важность</string>
+    <string name="pen_delo_time">Требуемое время</string>
 </resources>

@@ -18,6 +18,9 @@ public interface ActiveDatabaseDAO {
     @Query("SELECT * FROM activedatabase")
     List<ActiveDatabase> getAll();
 
+    @Query("SELECT * FROM activedatabase where id = :id")
+    ActiveDatabase getdelo(int id);
+
     @Delete
     void delete(ActiveDatabase t);
 

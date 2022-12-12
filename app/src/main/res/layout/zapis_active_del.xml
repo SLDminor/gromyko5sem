@@ -9,23 +9,27 @@
         android:id="@+id/delo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/anton"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
         android:text="Название"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="51dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/delo_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/anton"
-        android:text="Дата"
+        android:text="00.00.0000"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/time_of_b"
@@ -33,12 +37,14 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/delo_name"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/anton"
-        android:text="Время начала"
+        android:text="88:88"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintStart_toEndOf="@+id/delo_date"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/time_of_e"
@@ -46,14 +52,17 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/delo_name"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/anton"
-        android:text="Время начала"
+        android:text="99:99"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/del_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -64,6 +73,19 @@
         android:text="Удалить"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/anton"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintStart_toEndOf="@+id/time_of_b"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
