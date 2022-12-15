@@ -7,7 +7,7 @@
     tools:context=".Delo_Update">
 
         <EditText
-            android:id="@+id/editPenDeloName"
+            android:id="@+id/editUpDeloName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
@@ -23,7 +23,7 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/editPenDeloType"
+            android:id="@+id/editUpDeloDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
@@ -78,7 +78,7 @@
             android:textColor="@color/black"
             app:fontFamily="@font/abel"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editPenDeloName" />
+            app:layout_constraintTop_toBottomOf="@+id/editUpDeloName" />
 
         <TextView
             android:id="@+id/textView4"
@@ -91,7 +91,7 @@
             android:textSize="25dp"
             app:fontFamily="@font/abel"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editPenDeloType" />
+            app:layout_constraintTop_toBottomOf="@+id/editUpDeloDate" />
 
         <TextView
             android:id="@+id/textView5"
@@ -104,10 +104,10 @@
             android:textSize="25dp"
             app:fontFamily="@font/abel"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editDeloBTime" />
+            app:layout_constraintTop_toBottomOf="@+id/editUpDeloBTime" />
 
         <EditText
-            android:id="@+id/editDeloBTime"
+            android:id="@+id/editUpDeloBTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
@@ -122,7 +122,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
-            android:id="@+id/editPenDeloTime"
+            android:id="@+id/editUpDeloETime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
@@ -149,6 +149,6 @@
             app:backgroundTint="@color/buttons"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editPenDeloTime" />
+            app:layout_constraintTop_toBottomOf="@+id/editUpDeloETime" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

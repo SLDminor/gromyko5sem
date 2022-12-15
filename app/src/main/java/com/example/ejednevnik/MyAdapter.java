@@ -68,15 +68,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewRow> {
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 int z_id = list.get(position).getId();
                                 zapis = DBClient.getInstance(context.getApplicationContext()).getAppDatabase().activeDatabaseDAO().getdelo(z_id);
-                                Intent intent = new Intent(context, Delo_Creation.class);
+                                Intent intent = new Intent(context, Delo_Update.class);
                                 context.startActivity(intent);
-                            }
-                        })
-
-                        .setNegativeButton("Удалить дело", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-
                             }
                         });
 

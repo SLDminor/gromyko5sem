@@ -71,7 +71,7 @@ public class MyPenAdapter extends RecyclerView.Adapter<MyPenAdapter.ViewRow> {
         public ViewRow(@NonNull View itemView) {
             super(itemView);
             del_btn = itemView.findViewById(R.id.del_btn);
-            textView1 = itemView.findViewById(R.id.delo_name);
+            textView1 = itemView.findViewById(R.id.pen_delo_name);
             textView2 = itemView.findViewById(R.id.pen_delo_time);
             textView3 = itemView.findViewById(R.id.pen_delo_type);
         }

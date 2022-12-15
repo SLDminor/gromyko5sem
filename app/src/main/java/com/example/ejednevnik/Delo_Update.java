@@ -26,10 +26,10 @@ public class Delo_Update extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_delo_creation);
-        this.ed1 = (EditText)this.findViewById(R.id.editPenDeloName);
-        this.ed2 = (EditText)this.findViewById(R.id.editPenDeloType);
-        this.ed3 = (EditText)this.findViewById(R.id.editDeloBTime);
-        this.ed4 = (EditText)this.findViewById(R.id.editPenDeloTime);
+        this.ed1 = (EditText)this.findViewById(R.id.editUpDeloName);
+        this.ed2 = (EditText)this.findViewById(R.id.editUpDeloDate);
+        this.ed3 = (EditText)this.findViewById(R.id.editUpDeloBTime);
+        this.ed4 = (EditText)this.findViewById(R.id.editUpDeloETime);
         this.btn = (Button)this.findViewById(R.id.delo_create_button);
         this.btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

@@ -29,7 +29,7 @@ public class Pending_Delo_Creation extends AppCompatActivity {
     @SuppressLint("ResourceType")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setContentView(R.layout.activity_delo_creation);
+        this.setContentView(R.layout.activity_pending_delo_creation);
         this.ed1 = (EditText)this.findViewById(R.id.editPenDeloName);
         this.ed2 = (EditText)this.findViewById(R.id.editPenDeloType);
         this.ed3 = (EditText)this.findViewById(R.id.editPenDeloTime);
