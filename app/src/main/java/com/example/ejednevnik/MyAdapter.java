@@ -39,7 +39,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewRow> {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.zapis_active_del,parent,false);
         return new ViewRow(v);
     }
-
+    //связь данных записи с их графическими представлениями
     @Override
     public void onBindViewHolder(@NonNull ViewRow holder, @SuppressLint("RecyclerView") int position) {
         holder.textView1.setText(list.get(position).getName());
@@ -56,7 +56,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewRow> {
                 }).start();
             }
         });
-
+        // обработка долгого нажатия на конкретную запись для редактирования
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -79,7 +79,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewRow> {
             }
         });
     }
-
+    //подсчёт количества записей
     @Override
     public int getItemCount() {
         return list.size();
